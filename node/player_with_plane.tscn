@@ -27,4 +27,11 @@ zoom = Vector2( 0.2, 0.2 )
 
 [node name="Timer" type="Timer" parent="."]
 
+[node name="NetworkTickRate" type="Timer" parent="."]
+wait_time = 0.03
+autostart = true
+
+[node name="Tween" type="Tween" parent="."]
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="NetworkTickRate" to="." method="_on_NetworkTickRate_timeout"]

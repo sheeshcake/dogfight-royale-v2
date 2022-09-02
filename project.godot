@@ -11,8 +11,14 @@ config_version=4
 [application]
 
 config/name="Idea#1"
-run/main_scene="res://node/map1.tscn"
+run/main_scene="res://node/network_setup.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Network="*res://scripts/network.gd"
+Global="*res://scripts/global.gd"
+Players="*res://node/players.tscn"
 
 [display]
 
